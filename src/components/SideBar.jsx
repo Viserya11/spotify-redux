@@ -1,5 +1,4 @@
 import React from "react";
-import spotify from "./spotify.png"
 import home from "./home.png"
 import searchicon from "./searchicon.png"
 import library from "./library.png"
@@ -9,7 +8,7 @@ import createicon from "./createicon.png"
 class SideBar extends React.Component {
   render() {
     return (
-      <div className="flex">
+      
         <div className="left">
           <ul className="nav flex-column">
             <li className="nav-item">
@@ -19,7 +18,7 @@ class SideBar extends React.Component {
                 aria-current="page"
                 href="home.html"
               >
-                <img className="spotlogo" src={spotify} alt="spotify logo" /> Spotify{" "}
+                <img className="spotlogo" src={"/spotify.png"} alt="spotify logo" /> Spotify{" "}
               </a>
             </li>
             <li className="nav-item">
@@ -244,7 +243,7 @@ class SideBar extends React.Component {
             </div>
           </div>
         </div>
-      </div>
+      
     );
   }
 }
